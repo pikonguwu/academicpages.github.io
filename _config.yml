@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "files/profile.jpg"
+  avatar           : "files/profile.png"
   name             : "Zhimu Zhou"
   pronouns         : # example: "she/her"  
   bio              : "A Undergraduate student majoring in Internet of Things, Beijing University of Posts and Telecommunications. My research interests include multimodal models, embodied AI and human-robot interaction."
