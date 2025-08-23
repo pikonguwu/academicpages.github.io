@@ -11,7 +11,7 @@ redirect_from:
 
 Hello! I'm **Zhimu Zhou**, an undergraduate student from [Beijing University of Posts and Telecommunications](https://www.bupt.edu.cn/), engaged in research on multimodal models and embodied AI.
 
-🔭 **My long-term research goal**: Based on a well-modeled world model of the physical world 🌍, build a self-evolving agent system 🤖 which can continuously receive multi-modal feedback 📄🎨🎥 (e.g., text, audio, images, video, 3D data) from the world 🌏 and adapt to its changing environment 🌟.
+🔭 **My long-term research goal**: Based on a well-modeled world model of the physical world, build a self-evolving agent system 🤖 which can continuously receive multi-modal feedback (e.g., text, audio, images, video, 3D data) from the world and adapt to its changing environment.
 
 Check out my detailed [CV](../files/resume_chinese__1_.pdf)
 
