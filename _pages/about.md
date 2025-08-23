@@ -13,7 +13,7 @@ Hello! I'm **Zhimu Zhou**, an undergraduate student from [Beijing University of 
 
 🔭 **My long-term research goal**: Based on a well-modeled world model of the physical world, build a self-evolving agent system 🤖 which can continuously receive multi-modal feedback (e.g., text, audio, images, video, 3D data) from the world and adapt to its changing environment.
 
-Check out my detailed [CV](https://academicpages.github.io/files/resume_chinese__1_.pdf)
+Check out my detailed [CV](https://pikonguwu.github.io/academicpages.github.io/files/resume_chinese__1_.pdf)
 
 ---
 
