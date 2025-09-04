@@ -9,11 +9,11 @@ redirect_from:
 
 # About me
 
-Hello! I'm **Zhimu Zhou**, an undergraduate student from [Beijing University of Posts and Telecommunications](https://www.bupt.edu.cn/), engaged in research on multimodal models and embodied AI.
+Hello! I'm **Zhimu Zhou**, a third-year undergraduate student from [Beijing University of Posts and Telecommunications](https://www.bupt.edu.cn/), majoring in Internet of Things Engineering. I am passionate about research in multimodal models, embodied AI, and human-robot interaction.
 
-🔭 **My long-term research goal**: Based on a well-modeled world model of the physical world, build a self-evolving agent system 🤖 which can continuously receive multi-modal feedback (e.g., text, audio, images, video, 3D data) from the world and adapt to its changing environment.
+🔭 **My long-term research goal**: To develop intelligent systems that can seamlessly integrate multimodal information and interact with the physical world, ultimately creating more intuitive and effective human-robot collaboration frameworks.
 
-Check out my detailed [CV](https://pikonguwu.github.io/academicpages.github.io/files/resume_chinese__1_.pdf)
+Check out my detailed [CV](https://pikonguwu.github.io/academicpages.github.io/files/zzm-cv-en.pdf)
 
 ---
 
@@ -22,8 +22,8 @@ Check out my detailed [CV](https://pikonguwu.github.io/academicpages.github.io/f
 * Multimodal Models
 * Embodied AI
 * Human-Robot Interaction
-* Vision-Language Navigation
 * Computer Vision
+* Machine Learning
 
 ---
 
