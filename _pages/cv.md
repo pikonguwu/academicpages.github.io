@@ -11,35 +11,39 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Internet of Things Engineering, Beijing University of Posts and Telecommunications, 2022 - Present
+  * GPA: 3.82/4.0 (Rank: 2/182)
+  * Weighted Average: 91.29/100
+  * English Proficiency: CET-6: 627
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2025.08 - Present: Project Leader - "Chasing the Silver Bullet: An Inquiry into the Potential and Limits of Vibe-Coding"
+  * Beijing University of Posts and Telecommunications
+  * Independently designed and developed "Vibe Entropy" evaluation system
+  * Exploring optimal theoretical boundaries of Vibe-Coding
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2025.05 - 2025.07: Fourth Author - "TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models"
+  * Beijing University of Posts and Telecommunications
+  * Proposed visual feature reuse method for VLA models
+  * Validated feasibility through experiments considering locality principle
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* 2025.01 - 2025.05: Co-first Author - "MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and Feature Enhancement"
+  * Beijing University of Posts and Telecommunications
+  * Proposed MSNav, a modular framework with dynamic topological memory
+  * Responsible for all experimental implementation and paper writing
+
+* 2024.09 - 2025.02: Project Leader - "VLA Strategy Guidance Based on the Process Reward Model"
+  * Beijing University of Posts and Telecommunications
+  * Proposed independent process reward model for VLA guidance
+  * Designed overall architecture and verified through virtual simulation
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: Python, C, C++, Java
+* Machine Learning: PyTorch, TensorFlow, Scikit-learn
+* Research Areas: Multimodal Models, Embodied AI, Computer Vision
+* Tools: Linux, Git, Jupyter Notebook, LaTeX
 
 Publications
 ======
@@ -59,6 +63,16 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+Awards and Honors
+======
+* 2024: First Prize, IC Innovation Contest (MIIT) - National No. 1
+* 2024: Xiaomi Social Scholarship (Only 1 in Major, BUPT)
+* 2023-2024: Second-Class Scholarship (Major Top 10%, BUPT)
+* 2024: First Prize, China Innovation and Entrepreneurship Competition Beijing (Provincial Top 10%, Ministry of Education)
+* 2024: Second Prize, Computer Design Competition (Provincial Top 15%, Ministry of Education)
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Undergraduate Research Assistant, Beijing University of Posts and Telecommunications
+* Project Leader for multiple research initiatives
+* Active contributor to open-source machine learning projects

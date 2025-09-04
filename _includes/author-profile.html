@@ -36,6 +36,8 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
+      <li><a href="{{ base_path }}/files/zzm-cv-en.pdf"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV (English)</a></li>
+      <li><a href="{{ base_path }}/files/zzm-cv-cn.pdf"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV (中文)</a></li>
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.academia %}

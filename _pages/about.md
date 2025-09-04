@@ -13,7 +13,7 @@ Hello! I'm **Zhimu Zhou**, a third-year undergraduate student from [Beijing Univ
 
 🔭 **My long-term research goal**: To develop intelligent systems that can seamlessly integrate multimodal information and interact with the physical world, ultimately creating more intuitive and effective human-robot collaboration frameworks.
 
-Check out my detailed [CV](https://pikonguwu.github.io/academicpages.github.io/files/zzm-cv-en.pdf)
+Check out my detailed [CV (English)](https://pikonguwu.github.io/academicpages.github.io/files/zzm-cv-en.pdf) / [CV (中文)](https://pikonguwu.github.io/academicpages.github.io/files/zzm-cv-cn.pdf)
 
 ---
 
@@ -31,46 +31,54 @@ Check out my detailed [CV](https://pikonguwu.github.io/academicpages.github.io/f
 
 You can find the full list of my publications here.
 
-* **HiNav: A Human-Inspired Framework for Zero-Shot Vision-Language Navigation**  
+* **MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and Feature Enhancement**  
   Chenghao Liu*, **Zhimu Zhou***, Jiachen Zhang, Minghao Zhang, Songfang Huang, Huiling Duan.  
-  Under Review (*Equal contributions)
+  Under Review (*Co-first Author, randomly ordered by dice rolling)  
+  [Preprint](https://arxiv.org/pdf/2508.16654)
+
+* **TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models**  
+  Chenghao Liu, Jiachen Zhang, Chengxuan Li, **Zhimu Zhou**, Songfang Huang, Huiling Duan.  
+  Under Review (Fourth Author)  
+  [Preprint](https://arxiv.org/pdf/2508.19257)
 
 * **GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning**  
   Jian Zhao, Runze Liu, Kaiyan Zhang, **Zhimu Zhou**, Junqi Gao, Dong Li, Jiafei Lyu, Zhouyi Qian, Biqing Qi, Xiu Li, Bowen Zhou.  
   arXiv preprint arXiv:2505.15825 (2025)  
   [Paper](https://arxiv.org/abs/2504.00891)
 
-* **TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models**  
-  Chenghao Liu, Jiachen Zhang, Chengxuan Li, **Zhimu Zhou**, Songfang Huang, Huiling Duan.  
-  Under Review
-
 ---
 
 ### 🏆 Awards & Honors
 
-* **Scholarships**: Xiaomi Social Scholarship, University Second-Class Scholarship, Outstanding Student Leader, Outstanding Student
-* **National Level**: National First Prize in National College Student Integrated Electronic Circuit Innovation and Entrepreneurship Competition 
-* **Provincial Level**: Beijing Regional Second Prize in China College Student International Innovation and Entrepreneurship Competition, Provincial Second Prize in Computer Design Competition
+* **National Level**: First Prize, IC Innovation Contest (MIIT 2024) - National No. 1
+* **Scholarships**: Xiaomi Social Scholarship (Only 1 in Major, BUPT 2024), Second-Class Scholarship (Major Top 10%, BUPT 2023, 2024)
+* **Provincial Level**: First Prize, China Innovation and Entrepreneurship Competition Beijing (Provincial Top 10%, Ministry of Education 2024), Second Prize, Computer Design Competition (Provincial Top 15%, Ministry of Education 2024)
 
 ---
 
 ### 🛠️ Research Projects
 
-* **HiNav: Human-Inspired Zero-shot Vision-Language Navigation** (2025.01 - 2025.05)  
-  * **Background**: Existing vision-language models face difficulties in effectively integrating visual and language inputs for navigation in complex environments
-  * **Contribution**: Proposed HiNav, a pluggable modular approach inspired by human navigation cognition, enhancing model capabilities from four aspects: visual enhancement, spatial reasoning, instruction expansion, and dynamic topology
-  * **Achievement**: Built I-O-S dataset with 20k+ data points and fine-tuned open-source Qwen3-8B language model, achieving zero-shot SOTA performance on R2R with >50% success rate
-  * **Role**: Co-first author
+* **MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and Feature Enhancement** (2025.01 - 2025.05)  
+  * **Background**: Traditional intelligent agents can only passively receive all information and cannot actively filter relevant information for tasks to form task memory
+  * **Contribution**: Proposed MSNav, a modular framework with dynamic topological memory and spatial capabilities
+  * **Role**: Co-first author, responsible for all experimental implementation and part of paper writing
+  * **Status**: Under Review, [Preprint](https://arxiv.org/pdf/2508.16654)
 
-* **Aesthetic Cropping Based on Slice Comparison** (2024.09 - 2025.02)  
-  * **Background**: Image aesthetic evaluation models rely heavily on explicit, low-level visual features from manually annotated datasets, limiting generalization to diverse aesthetic perceptions
-  * **Contribution**: Implemented contrastive methods for rule-free cropping using Qwen2.5VL-7B model, achieving 65% accuracy on RLHF metrics
-  * **Role**: Responsible for model fine-tuning experiments and data processing, participated in paper writing as second author
+* **TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models** (2025.05 - 2025.07)  
+  * **Background**: Need to enhance basic performance of VLA models without additional training costs
+  * **Contribution**: Proposed visual feature reuse method, validated feasibility through experiments considering locality principle in VLA field
+  * **Role**: Fourth author, focused on application of locality principle and experimental validation
+  * **Status**: Under Review, [Preprint](https://arxiv.org/pdf/2508.19257)
 
-* **Polarization Demultiplexing Prototype for Minimal Coherent Systems** (2023.03 - 2024.06)  
-  * **Background**: Fiber polarization damage coefficient in ultra-high voltage environments is highly susceptible to environmental factors, affecting fiber transmission information
-  * **Contribution**: Developed CNN algorithm for real-time polarization damage compensation prediction with active learning, achieving 91% accuracy
-  * **Role**: Undergraduate project leader, led team to win Beijing Regional Second Prize in China College Student International Innovation and Entrepreneurship Competition
+* **VLA Strategy Guidance Based on the Process Reward Model** (2024.09 - 2025.02)  
+  * **Background**: Inspired by verification effectiveness of NP problems
+  * **Contribution**: Proposed independent process reward model to provide dense guidance for VLA models to avoid ineffective exploration
+  * **Role**: Project leader, designed overall architecture and verified through virtual simulation experiments
+
+* **Chasing the Silver Bullet: An Inquiry into the Potential and Limits of Vibe-Coding** (2025.08 - Present)  
+  * **Background**: "Silver Bullet" effect in software engineering - linear expressive growth of natural language cannot match non-linear growth of project complexity
+  * **Contribution**: Independently designed and developed "Vibe Entropy" evaluation system to explore optimal theoretical boundaries of Vibe-Coding
+  * **Role**: Project leader
 
 ---
 
@@ -87,9 +95,7 @@ You can find the full list of my publications here.
 
 * **Beijing University of Posts and Telecommunications**  
   * Bachelor in Internet of Things Engineering (2022.09 - Present)
-  * _GPA:_ **3.82/4.0** (_Rank:_ **2/182**)
-  * _Relevant Courses:_ C Programming (95), Electronic Circuit Fundamentals (93), Data Structures & Algorithms (97), Probability Theory (99)
-  * _English Proficiency:_ CET-4: 594, CET-6: 627
+  * _English Proficiency:_ CET-6: 627
 
 ---
 
