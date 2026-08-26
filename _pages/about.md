@@ -18,7 +18,7 @@ redirect_from:
       advised by <a href="https://www.bozhao.me/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.
     </p>
     <div class="hero__links" aria-label="Social links">
-      <a href="mailto:2022zhimu.zhou@bupt.edu.cn">Email</a>
+      <a href="mailto:piekeniuszwu@gmail.com">Email</a>
       <a href="https://github.com/pikonguwu" target="_blank" rel="noopener">GitHub</a>
       <a href="https://arxiv.org/search/?query=Zhimu+Zhou&amp;searchtype=author" target="_blank" rel="noopener">arXiv</a>
     </div>
@@ -101,7 +101,7 @@ redirect_from:
       <div class="timeline__date">2025.08<br>— 2025.10</div>
       <div class="timeline__marker" aria-hidden="true"><span></span></div>
       <div class="timeline__content">
-        <p class="timeline__company">Agent Data Evaluation Intern · ByteDance</p>
+        <p class="timeline__company">Large Language Model Department · ByteDance</p>
         <h3>General-purpose Automated Multi-Turn Agent Evaluation Framework</h3>
         <p>Independently designed a machine-learning-based post-evaluation framework for assessing agent capabilities. The framework was deployed as a core tool in the team's daily production workflow.</p>
       </div>
