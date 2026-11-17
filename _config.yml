@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Zhimu Zhou"
 title_separator          : "-"
 name                     : &name "Zhimu Zhou"
-description              : &description "Incoming Ph.D. student at SJTU SAI researching vision-language-action models, embodied AI, human-robot interaction, and multimodal learning."
+description              : &description "Ph.D. student at SJTU SAI researching vision-language-action models, embodied AI, human-robot interaction, and multimodal learning."
 url                      : "https://pikonguwu.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/academicpages.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "pikonguwu/academicpages.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "Zhimu Zhou"
   pronouns         : # example: "she/her"  
-  bio              : "Incoming Ph.D. student at Shanghai Jiao Tong University. Researching VLA, embodied AI, HRI, and multimodal models."
+  bio              : "Ph.D. student at Shanghai Jiao Tong University. Researching VLA, embodied AI, HRI, and multimodal models."
   location         : "Shanghai, China"
   employer         : "Shanghai Jiao Tong University"
   uri              : # URL
-  email            : "piekeniuszwu@gmail.com"
+  email            : "2022zhimu.zhou@bupt.edu.cn"
 
   # Academic websites
   academia         : # URL
@@ -86,6 +86,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  under_review:
+    title: 'Under Review'
 
 # Site Settings
 teaser                   :  profile.png # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

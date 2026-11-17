@@ -9,70 +9,56 @@ redirect_from:
 
 {% include base_path %}
 
+[Download CV (中文)]({{ '/files/zzm-cv-cn.pdf' | relative_url }})
+
 Education
 ======
-* B.S. in Internet of Things Engineering, Beijing University of Posts and Telecommunications, 2022 - Present
-  * GPA: 3.82/4.0 (Rank: 2/182)
-  * Weighted Average: 91.29/100
-  * English Proficiency: CET-6: 627
+* Ph.D. in Artificial Intelligence, Shanghai Jiao Tong University, 2026.09 - 2031.06 (expected)
+  * School of Artificial Intelligence; Advisor: Prof. Bo Zhao
+* B.Eng. in Internet of Things Engineering, Beijing University of Posts and Telecommunications, 2022.09 - 2026.06
 
 Research Experience
 ======
-* 2025.08 - Present: Project Leader - "Chasing the Silver Bullet: An Inquiry into the Potential and Limits of Vibe-Coding"
-  * Beijing University of Posts and Telecommunications
-  * Independently designed and developed "Vibe Entropy" evaluation system
-  * Exploring optimal theoretical boundaries of Vibe-Coding
+* 2026.09 - Present: Co-first Author - "Duo: Dual-arm coordination for Bimanual Policies" (Under Review)
+  * Designed arm-wise state and action tokens with coupled generation through cross-arm self-attention in a shared Transformer, applicable to VLA and WAM policies.
+  * Implemented and trained the model, conducted systematic evaluations and ablations, and contributed to paper writing.
+  * Improved four base policies on RoboTwin 2.0: FLOWER-Duo achieves 62.70% overall success (+12.55 percentage points), and π0.5-Duo achieves 67.37% (+9.02 points). FLOWER-Duo leads the compared models in randomized generalization, precision, and memory on RoboDojo.
+  * Evaluated FLOWER-Duo on real robots: 90.0% success on soft-parcel handling, 83.8% on rigid-parcel handling, and 40.0% on box packing, exceeding π0.5 on all three tasks.
 
-* 2025.05 - 2025.07: Fourth Author - "TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models"
-  * Beijing University of Posts and Telecommunications
-  * Proposed visual feature reuse method for VLA models
-  * Validated feasibility through experiments considering locality principle
+* 2025.10 - 2026.04: Project Leader and First Author - "Probing Visual Planning in Image Editing Models" (NeurIPS 2026, Accepted)
+  * BIGAI
+  * Built the Amaze benchmark to evaluate visual spatial reasoning and planning in image editing models.
+  * Designed a fully automated, rule-based image-to-image evaluation pipeline.
 
-* 2025.01 - 2025.05: Co-first Author - "MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and Feature Enhancement"
-  * Beijing University of Posts and Telecommunications
-  * Proposed MSNav, a modular framework with dynamic topological memory
-  * Responsible for all experimental implementation and paper writing
+* 2025.05 - 2025.07: Fourth Author - "TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models" (AAAI 2026)
+  * Peking University
+  * Investigated temporal locality and validated training-free visual feature reuse and temporal feature fusion for VLA models.
 
-* 2024.09 - 2025.02: Project Leader - "VLA Strategy Guidance Based on the Process Reward Model"
-  * Beijing University of Posts and Telecommunications
-  * Proposed independent process reward model for VLA guidance
-  * Designed overall architecture and verified through virtual simulation
+* 2025.01 - 2025.05: Project Leader and Co-first Author - "MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and LLM Spatial Reasoning" (ICASSP 2026)
+  * Peking University
+  * Contributed to dynamic topological memory and spatial reasoning, engineering experiments, method validation, and paper writing.
+  * Achieved state-of-the-art zero-shot navigation performance, doubling the success rate on complex tasks.
 
-Skills
+Work experience
 ======
-* Programming Languages: Python, C, C++, Java
-* Machine Learning: PyTorch, TensorFlow, Scikit-learn
-* Research Areas: Multimodal Models, Embodied AI, Computer Vision
-* Tools: Linux, Git, Jupyter Notebook, LaTeX
+* Core Algorithm Intern, QuicRobot, 2026.03 - Present
+  * Developed VLA and World Action Model (WAM) algorithms through model adaptation, training, simulation, and real-robot evaluation.
+  * Integrated multi-view observations, robot states, action prediction, and control for rigid parcel flipping, flexible parcel handling, and carton folding.
+  * Compared models, analyzed failures, and iterated training based on success rate, generalization, and runtime stability.
+
+* Agent Data Evaluation Intern, ByteDance, 2025.08 - 2025.12
+  * Independently designed and implemented a machine-learning-based Post-Eval framework for multi-turn agents, automating evaluation and reducing manual work.
+  * Deployed the framework as a core departmental tool for continuous agent evaluation in daily production.
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+
 Awards and Honors
 ======
-* 2024: First Prize, IC Innovation Contest (MIIT) - National No. 1
-* 2024: Xiaomi Social Scholarship (Only 1 in Major, BUPT)
-* 2023-2024: Second-Class Scholarship (Major Top 10%, BUPT)
-* 2024: First Prize, China Innovation and Entrepreneurship Competition Beijing (Provincial Top 10%, Ministry of Education)
-* 2024: Second Prize, Computer Design Competition (Provincial Top 15%, Ministry of Education)
-
-Service and leadership
-======
-* Undergraduate Research Assistant, Beijing University of Posts and Telecommunications
-* Project Leader for multiple research initiatives
-* Active contributor to open-source machine learning projects
+* 2025: National Encouragement Scholarship (Only recipient in major, BUPT)
+* 2024: National First Prize, IC Innovation Contest (1st in track)
+* 2024: Xiaomi Social Scholarship (Only recipient in major, BUPT)
+* 2023, 2024: Second-Class Scholarship (Rank: 2/182, BUPT)

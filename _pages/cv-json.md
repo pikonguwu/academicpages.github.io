@@ -12,7 +12,6 @@ redirect_from:
 {% include cv-template.html %}
 
 <div class="cv-download-links">
-  <a href="{{ base_path }}/files/zzm-cv-en.pdf" class="btn btn--primary">Download CV (English)</a>
   <a href="{{ base_path }}/files/zzm-cv-cn.pdf" class="btn btn--primary">Download CV (中文)</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+  <a href="{{ '/cv/' | relative_url }}" class="btn btn--inverse">View Full CV</a>
 </div>

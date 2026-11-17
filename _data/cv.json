@@ -1,152 +1,94 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Zhimu Zhou",
+    "label": "Ph.D. Student",
+    "email": "2022zhimu.zhou@bupt.edu.cn",
+    "website": "https://pikonguwu.github.io/academicpages.github.io/",
+    "summary": "Ph.D. student at Shanghai Jiao Tong University. Researching VLA, embodied AI, HRI, and multimodal models.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Shanghai",
+      "countryCode": "CN"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "pikonguwu",
+        "url": "https://github.com/pikonguwu"
       }
     ]
   },
-  "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "Shanghai Jiao Tong University · School of Artificial Intelligence",
+      "area": "Ph.D. in Artificial Intelligence",
+      "startDate": "2026.09",
+      "endDate": "2031.06 (expected)"
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Beijing University of Posts and Telecommunications",
+      "area": "B.Eng. in Internet of Things Engineering",
+      "startDate": "2022.09",
+      "endDate": "2026.06"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "work": [
+    {
+      "position": "Core Algorithm Intern",
+      "company": "QuicRobot",
+      "startDate": "2026.03",
+      "endDate": "Present",
+      "highlights": [
+        "Developed VLA and World Action Model (WAM) algorithms through model adaptation, training, simulation, and real-robot evaluation.",
+        "Integrated multi-view observations, robot states, action prediction, and control for rigid parcel flipping, flexible parcel handling, and carton folding.",
+        "Compared models, analyzed failures, and iterated training based on success rate, generalization, and runtime stability."
+      ]
+    },
+    {
+      "position": "Agent Data Evaluation Intern",
+      "company": "ByteDance",
+      "startDate": "2025.08",
+      "endDate": "2025.12",
+      "highlights": [
+        "Independently designed and implemented a machine-learning-based Post-Eval framework for multi-turn agents, automating evaluation and reducing manual work.",
+        "Deployed the framework as a core departmental tool for continuous agent evaluation in daily production."
+      ]
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Duo: Dual-arm coordination for Bimanual Policies",
+      "publisher": "Under Review",
+      "releaseDate": "2026-09-01",
+      "website": null,
+      "summary": "Arm-wise state and action tokens with coupled generation in a shared Transformer, improving bimanual VLA and WAM policies."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and LLM Spatial Reasoning",
+      "publisher": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "releaseDate": "2026-05-06",
+      "website": "https://arxiv.org/abs/2508.16654",
+      "summary": "A modular framework combining dynamic map memory, spatial reasoning, and LLM-based decision making for zero-shot vision-and-language navigation."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Probing Visual Planning in Image Editing Models",
+      "publisher": "NeurIPS 2026 (Accepted)",
+      "releaseDate": "2026-04-23",
+      "website": "https://arxiv.org/abs/2604.22868",
+      "summary": "EAR reframes visual planning as a single-step image transformation and introduces AMAZE, a procedurally generated benchmark of abstract planning puzzles."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models",
+      "publisher": "The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26)",
+      "releaseDate": "2026-03-14",
+      "website": "https://doi.org/10.1609/aaai.v40i22.38910",
+      "summary": "A training-free temporal token fusion approach that improves VLA inference by selectively integrating historical and current visual representations."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning",
+      "publisher": "The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26)",
+      "releaseDate": "2026-03-14",
+      "website": "https://doi.org/10.1609/aaai.v40i41.40797",
+      "summary": "A generative process reward model that performs explicit chain-of-thought reasoning and code verification before judging each reasoning step."
     }
   ]
 }
