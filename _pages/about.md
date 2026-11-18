@@ -19,7 +19,7 @@ author_profile: false
   <nav class="archive-tools" aria-label="Contact and links">
     <a href="#profile">PROFILE</a>
     <a href="#research">RESEARCH</a>
-    <a href="mailto:2022zhimu.zhou@bupt.edu.cn">EMAIL <span aria-hidden="true">↗</span></a>
+    <a href="mailto:piekeniuszwu@gmail.com">EMAIL <span aria-hidden="true">↗</span></a>
     <a href="https://github.com/pikonguwu" target="_blank" rel="noopener">GITHUB <span aria-hidden="true">↗</span></a>
     <button class="archive-theme" type="button" aria-label="Switch to dark theme" title="Switch theme">◐</button>
   </nav>
