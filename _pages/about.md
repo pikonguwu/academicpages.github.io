@@ -3,9 +3,6 @@ permalink: /
 title: "Zhimu Zhou — Embodied AI Researcher"
 layout: home
 author_profile: false
-redirect_from:
-  - /about/
-  - /about.html
 ---
 
 <div class="archive-scene" aria-hidden="true" data-model="{{ '/assets/models/archive-cassette.glb' | relative_url }}">
@@ -24,7 +21,6 @@ redirect_from:
     <a href="#research">RESEARCH</a>
     <a href="mailto:2022zhimu.zhou@bupt.edu.cn">EMAIL <span aria-hidden="true">↗</span></a>
     <a href="https://github.com/pikonguwu" target="_blank" rel="noopener">GITHUB <span aria-hidden="true">↗</span></a>
-    <a href="{{ '/cv/' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
     <button class="archive-theme" type="button" aria-label="Switch to dark theme" title="Switch theme">◐</button>
   </nav>
 </header>
@@ -42,7 +38,7 @@ redirect_from:
 
 <aside class="archive-resident" aria-label="Profile and research">
     <section class="resident-section" id="profile" data-code="Z–004" data-title="Profile" data-type="PERSONAL RECORD" data-count="EDUCATION &amp; HONORS" data-note="SHANGHAI JIAO TONG UNIVERSITY" aria-labelledby="profile-title">
-      <header class="document-heading"><p class="archive-kicker">FILE Z–004 <span>/</span> PERSONAL RECORD</p><h2 id="profile-title" tabindex="-1">Profile <a href="{{ '/cv/' | relative_url }}" aria-label="View full CV">↗</a></h2><p class="document-meta">PH.D. STUDENT <span>SHANGHAI / CHINA</span></p></header>
+      <header class="document-heading"><p class="archive-kicker">FILE Z–004 <span>/</span> PERSONAL RECORD</p><h2 id="profile-title" tabindex="-1">Profile</h2><p class="document-meta">PH.D. STUDENT <span>SHANGHAI / CHINA</span></p></header>
       <div class="profile-intro"><img src="{{ '/images/profile-london.jpg' | relative_url }}" alt="Zhimu Zhou in London" width="1200" height="1600"><p>I am a Ph.D. student at the <a href="https://soai.sjtu.edu.cn/" target="_blank" rel="noopener">School of Artificial Intelligence</a> at Shanghai Jiao Tong University, advised by <a href="https://www.bozhao.me/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.</p></div>
     </section>
     <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="PHYSICAL INTELLIGENCE / AI &amp; ROBOTICS" aria-labelledby="research-title">
@@ -91,7 +87,7 @@ redirect_from:
       <header class="document-heading"><p class="archive-kicker">FILE P–001 <span>/</span> RESEARCH OUTPUT</p><h2 id="publications-title" tabindex="-1">Publications</h2><p class="document-meta">PAPERS &amp; PREPRINTS <span>2026</span></p></header>
       <div class="paper-list">
       <article class="paper" data-reveal>
-        <p><span class="paper__venue">[<strong>Under Review</strong>]</span> <em>Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies</em>. <strong>Zhimu Zhou*</strong>, Yuqi Yang*, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao. <a href="{{ '/publication/duo-vla-bimanual-coordination' | relative_url }}">[<strong>Details</strong>]</a></p>
+        <p><span class="paper__venue">[<strong>Under Review</strong>]</span> <em>Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies</em>. <strong>Zhimu Zhou*</strong>, Yuqi Yang*, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao.</p>
       </article>
 
       <article class="paper" data-reveal>
@@ -111,7 +107,6 @@ redirect_from:
       </article>
     </div>
       <p class="document-meta">* Equal contribution (co-first authors).</p>
-      <a class="archive-text-link" href="{{ '/publications/' | relative_url }}">View publication archive <span aria-hidden="true">↗</span></a>
     </section>
     <section class="archive-document" id="internships" data-code="I–002" data-title="Internships" data-type="RESEARCH EXPERIENCE" data-count="02 RECORDS" data-note="2025 — PRESENT / INDUSTRY" aria-labelledby="internships-title">
       <header class="document-heading"><p class="archive-kicker">FILE I–002 <span>/</span> RESEARCH EXPERIENCE</p><h2 id="internships-title" tabindex="-1">Internships</h2><p class="document-meta">INDUSTRY EXPERIENCE <span>2025 — PRESENT</span></p></header>

@@ -98,9 +98,19 @@
   app.querySelectorAll('[data-step]').forEach(button => button.addEventListener('click', () => select(selected + Number(button.dataset.step))));
   access.addEventListener('click', open);
   app.querySelector('.archive-back').addEventListener('click', close);
+  const background = app.querySelector('.resident-background');
+  background.addEventListener('toggle', () => {
+    const resident = background.parentElement;
+    if (background.open && getComputedStyle(resident).overflowY === 'auto') {
+      resident.scrollTo({
+        top: background.offsetTop,
+        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    }
+  });
   app.querySelectorAll('.archive-tools a[href="#profile"], .archive-tools a[href="#research"]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
-    app.querySelector(`${link.getAttribute('href')} h2`).focus({ preventScroll: true });
+    app.querySelector(`${link.getAttribute('href')} h2`).focus();
   }));
   window.addEventListener('hashchange', syncHash);
   window.addEventListener('keydown', event => {
@@ -119,7 +129,7 @@
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
       event.preventDefault(); select(selected + (event.key === 'ArrowRight' ? 1 : -1));
     }
-    if (event.key === 'Enter' && !reading && !event.target.closest('a, button')) { event.preventDefault(); open(); }
+    if (event.key === 'Enter' && !reading && !event.target.closest('a, button, summary')) { event.preventDefault(); open(); }
   });
 
   function applyTheme(dark) {

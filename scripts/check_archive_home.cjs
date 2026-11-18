@@ -48,6 +48,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     assert.equal(await page.locator('#publications .paper em').first().innerText(), duoTitle);
     assert((await page.locator('#publications .paper').first().innerText()).includes('Zhimu Zhou*, Yuqi Yang*'));
     assert((await page.locator('#publications').innerText()).includes('* Equal contribution'));
+    assert.equal(await page.getByRole('link', { name: 'View publication archive' }).count(), 0);
     await page.locator('.archive-reader-scroll').evaluate(el => { el.scrollTop = el.scrollHeight; });
     const lastPaper = await page.locator('#publications .paper').last().boundingBox();
     assert(lastPaper.y + lastPaper.height < 805, 'Last paper must be readable within the scroll area');
@@ -110,26 +111,41 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     await staticPage.close();
     console.log('PASS: reduced motion, unavailable 3D asset and JavaScript-free reading');
 
-    const publicationPage = await browser.newPage({ javaScriptEnabled: false });
-    for (const path of ['publications/', 'cv/', 'cv-json/', 'publication/duo-vla-bimanual-coordination']) {
-      assert.equal((await publicationPage.goto(base + path)).status(), 200);
-      const content = await publicationPage.locator('#main').innerText();
-      assert(content.includes(duoTitle), `Duo title missing on ${path}`);
-      assert(!content.includes('Dual-arm coordination'), `Stale title on ${path}`);
-      assert(!content.includes('Accepted'), `Stale acceptance label on ${path}`);
-      assert(!content.includes('Published in Under Review'), `Incorrect publication status on ${path}`);
-      if (path === 'cv-json/') {
-        assert(content.includes('Co-first authors: Zhimu Zhou and Yuqi Yang.'));
-      } else {
-        assert(content.includes('Zhimu Zhou*, Yuqi Yang*'), `Missing co-first authors on ${path}`);
-      }
-      assert(await publicationPage.locator('em').filter({ hasText: duoTitle }).count() > 0);
-      if (path.startsWith('publication/')) {
-        assert.equal(await publicationPage.locator('[itemprop="datePublished"], meta[property="article:published_time"]').count(), 0);
-      }
+    const backgroundPage = await browser.newPage({ reducedMotion: 'reduce' });
+    const obsoletePaths = ['publications/', 'cv/', 'cv-json/', 'publication/duo-vla-bimanual-coordination', 'portfolio/', 'talkmap.html', 'teaching/'];
+    for (const path of obsoletePaths) {
+      assert.equal((await backgroundPage.request.get(base + path)).status(), 404, `Old page still published: ${path}`);
     }
-    await publicationPage.close();
-    console.log('PASS: consistent publication titles, co-first authors, italics and review status across all pages');
+    console.log('PASS: obsolete pages are no longer published');
+
+    for (const viewport of [{ width: 1440, height: 900 }, { width: 1024, height: 768 }, { width: 390, height: 844 }]) {
+      await backgroundPage.setViewportSize(viewport);
+      await backgroundPage.goto(base);
+      const details = backgroundPage.locator('.resident-background');
+      const summary = details.locator('summary');
+      await summary.locator('span').click();
+      await backgroundPage.waitForFunction(() => {
+        const card = document.querySelector('.resident-background .info-card');
+        const rect = card.getBoundingClientRect();
+        return card.contains(document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2));
+      });
+      assert.equal(await details.evaluate(el => el.open), true);
+      if (viewport.width > 760) assert.equal(await backgroundPage.evaluate(() => scrollY), 0);
+      const lastHonor = details.locator('.honor-list li').last();
+      await lastHonor.scrollIntoViewIfNeeded();
+      assert(await lastHonor.evaluate(el => {
+        const rect = el.getBoundingClientRect();
+        return el.contains(document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2));
+      }));
+      await summary.click();
+      await summary.press('Enter');
+      assert.equal(await details.evaluate(el => el.open), true);
+      assert.equal(await backgroundPage.locator('.archive-reader').isVisible(), false);
+      await summary.press('Space');
+      assert.equal(await details.evaluate(el => el.open), false);
+    }
+    await backgroundPage.close();
+    console.log('PASS: education and honors visible after expansion, scrollable through the final honor, with native keyboard controls');
   } finally {
     await browser.close();
   }
