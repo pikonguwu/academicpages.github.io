@@ -13,7 +13,16 @@
     if (music.open && !player.hasAttribute('src')) {
       player.src = player.dataset.src;
       player.hidden = false;
+      const switcher = music.querySelector('.archive-music-switch');
+      if (switcher) switcher.hidden = false;
     }
+  });
+  music?.querySelector('.archive-music-switch')?.addEventListener('click', event => {
+    const player = music.querySelector('iframe');
+    const showPlaylist = player.classList.toggle('show-playlist');
+    player.src = showPlaylist ? player.dataset.playlist : player.dataset.src;
+    player.title = (showPlaylist ? 'band' : '循环') + ' · NetEase Cloud Music';
+    event.currentTarget.textContent = showPlaylist ? 'Back to 循环' : 'Browse playlist';
   });
   document.addEventListener('click', event => {
     if (music?.open && !music.contains(event.target)) music.open = false;

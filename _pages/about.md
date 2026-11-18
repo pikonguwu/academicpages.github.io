@@ -24,7 +24,8 @@ author_profile: false
     <details class="archive-music">
       <summary aria-label="Music playlist" title="Music playlist">♪</summary>
       <div class="archive-music-panel">
-        <iframe title="band · NetEase Cloud Music" data-src="https://music.163.com/outchain/player?type=0&amp;id=18336730585&amp;auto=0&amp;height=430" allow="autoplay" hidden></iframe>
+        <iframe title="循环 · NetEase Cloud Music" data-src="https://music.163.com/outchain/player?type=2&amp;id=3319460922&amp;auto=1&amp;height=66" data-playlist="https://music.163.com/outchain/player?type=0&amp;id=18336730585&amp;auto=0&amp;height=430" allow="autoplay" hidden></iframe>
+        <button type="button" class="archive-music-switch" hidden>Browse playlist</button>
         <a href="https://music.163.com/playlist?id=18336730585" target="_blank" rel="noopener">Open in NetEase Cloud Music ↗</a>
       </div>
     </details>
