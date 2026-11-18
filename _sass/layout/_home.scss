@@ -193,15 +193,16 @@ html[data-theme="dark"] .archive-home {
 @media (prefers-reduced-motion: reduce) { .archive-home *, .archive-home *::before { transition: none !important; scroll-behavior: auto !important; } }
 
 /* Profile and research stay visible beside the two interactive archives. */
-.archive-resident { position: absolute; z-index: 2; top: 174px; bottom: 195px; left: 4vw; width: 23%; max-width: 315px; overflow: auto; padding-right: 18px; scrollbar-width: thin; scrollbar-color: var(--archive-line) transparent; }
-.archive-resident::before { content: ""; position: fixed; pointer-events: none; z-index: -1; left: 0; top: 145px; bottom: 160px; width: 30%; background: linear-gradient(90deg, var(--archive-bg) 77%, transparent); }
+.archive-resident { position: absolute; z-index: 2; top: 174px; bottom: 195px; left: 4vw; width: 30%; max-width: 435px; overflow: auto; padding-right: 18px; scrollbar-width: thin; scrollbar-color: var(--archive-line) transparent; }
+.archive-resident::before { content: ""; position: fixed; pointer-events: none; z-index: -1; left: 0; top: 145px; bottom: 160px; width: 35%; background: linear-gradient(90deg, var(--archive-bg) 77%, transparent); }
 .archive-resident .document-heading h2 { font-size: 24px; margin: 12px 0 0; display: flex; justify-content: space-between; }
 .archive-resident .document-heading h2 a { font-size: 20px; }
 .archive-resident .archive-kicker { font-size: 8px; gap: 10px; }
 .archive-resident .document-meta { display: none; }
-.archive-resident .profile-intro { grid-template-columns: 58px 1fr; gap: 15px; padding: 18px 0 25px; }
-.archive-resident .profile-intro img { width: 58px; height: 78px; }
-.archive-resident .profile-intro p { font-size: 12px; line-height: 1.65; }
+.archive-resident .profile-intro { grid-template-columns: auto 1fr; align-items: center; gap: 18px; padding: 18px 0 25px; }
+.archive-resident .profile-intro img { width: clamp(84px, 8vw, 120px); height: auto; }
+.archive-resident #profile-title { font-size: clamp(28px, 2.6vw, 38px); }
+.archive-resident .profile-intro p { font-size: 15px; line-height: 1.65; }
 .archive-resident .research-statement { font-size: 13px; line-height: 1.65; padding: 16px 0; }
 .archive-resident .research-list article { gap: 12px; padding: 10px 0; }
 .archive-resident .research-list h3 { font-size: 14px; }
@@ -218,8 +219,8 @@ html[data-theme="dark"] .archive-home {
 .archive-inspect { left: 34%; gap: 16px; }
 .archive-inspect button > span { display: none; }
 .archive-inspect button:last-child { padding-left: 6px; }
-.archive-app[data-view="reader"] .archive-back { left: 30%; }
-.archive-app[data-view="reader"] .archive-inspect { left: 31%; }
+.archive-app[data-view="reader"] .archive-back { left: 34%; }
+.archive-app[data-view="reader"] .archive-inspect { left: 35%; }
 .archive-app[data-view="reader"] .archive-inspect p { max-width: 95px; line-height: 1.8; }
 .archive-app:not(.is-enhanced) .archive-resident { position: relative; inset: auto; width: 100%; max-width: 760px; margin: 40px auto; }
 .archive-app:not(.is-enhanced) .archive-resident::before { display: none; }
@@ -256,8 +257,8 @@ html[data-theme="dark"] .archive-home {
   .archive-resident { width: 28%; }
   .archive-preview { margin-left: 64%; width: 36%; }
   .archive-preview h1 { font-size: 36px; }
-  .archive-resident .profile-intro { display: block; }
-  .archive-resident .profile-intro img { float: left; margin: 0 12px 6px 0; width: 45px; height: 60px; }
+  .archive-resident .profile-intro { display: flow-root; }
+  .archive-resident .profile-intro img { float: left; margin: 0 12px 6px 0; width: 80px; height: auto; }
   .archive-index { margin-left: 32%; gap: 20px; }
   .archive-tools { gap: 13px; }
   .archive-inspect { left: 35%; flex-wrap: wrap; gap: 0 10px; max-width: 160px; }
@@ -270,7 +271,7 @@ html[data-theme="dark"] .archive-home {
   .archive-resident { order: 1; position: relative; inset: auto; width: 100%; max-width: none; overflow: visible; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; padding: 15px 0 30px; }
   .archive-resident::before { display: none; }
   .archive-resident .document-heading h2 { font-size: 20px; }
-  .archive-resident .profile-intro { display: block; }
+  .archive-resident .profile-intro { display: flow-root; }
   .archive-resident .profile-intro img { float: left; margin: 0 12px 7px 0; }
   .archive-resident .research-statement { font-size: 12px; padding-block: 14px; }
   .archive-resident .research-list h3 { font-size: 12px; }

@@ -7,6 +7,30 @@
   const reader = app.querySelector('.archive-reader');
   const access = app.querySelector('.archive-access');
   const theme = app.querySelector('.archive-theme');
+  const audio = app.querySelector('#archive-audio');
+  const music = app.querySelector('.archive-music');
+  music.hidden = false;
+  function updateMusic() {
+    music.textContent = audio.paused ? '▶ MUSIC' : 'Ⅱ MUSIC';
+    music.setAttribute('aria-label', audio.paused ? 'Play background music' : 'Pause background music');
+  }
+  audio.addEventListener('play', updateMusic);
+  audio.addEventListener('pause', updateMusic);
+  music.addEventListener('click', async () => {
+    if (!audio.paused) {
+      audio.pause();
+      return;
+    }
+    try {
+      await audio.play();
+    } catch (error) {
+      if (error.name !== 'AbortError') {
+        music.textContent = '↻ MUSIC';
+        music.setAttribute('aria-label', 'Retry background music');
+      }
+    }
+  });
+
   let selected = 0;
   let reading = false;
   let scene;
