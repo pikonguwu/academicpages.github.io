@@ -91,7 +91,7 @@ redirect_from:
       <header class="document-heading"><p class="archive-kicker">FILE P–001 <span>/</span> RESEARCH OUTPUT</p><h2 id="publications-title" tabindex="-1">Publications</h2><p class="document-meta">PAPERS &amp; PREPRINTS <span>2026</span></p></header>
       <div class="paper-list">
       <article class="paper" data-reveal>
-        <p><span class="paper__venue">[<strong>Under Review</strong>]</span> <em>Duo: Dual-arm coordination for Bimanual Policies</em>. <strong>Zhimu Zhou</strong>, Yuqi Yang, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao. <a href="{{ '/publication/duo-vla-bimanual-coordination' | relative_url }}">[<strong>Details</strong>]</a></p>
+        <p><span class="paper__venue">[<strong>Under Review</strong>]</span> <em>Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies</em>. <strong>Zhimu Zhou*</strong>, Yuqi Yang*, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao. <a href="{{ '/publication/duo-vla-bimanual-coordination' | relative_url }}">[<strong>Details</strong>]</a></p>
       </article>
 
       <article class="paper" data-reveal>
@@ -107,9 +107,10 @@ redirect_from:
       </article>
 
       <article class="paper" data-reveal>
-        <p><span class="paper__venue">[<strong>AAAI 2026</strong>]</span> <em>GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning</em>. Jian Zhao, Runze Liu, Kaiyan Zhang, <strong>Zhimu Zhou</strong>, Junqi Gao, Dong Li, Jiafei Lyu, Zhouyi Qian, Biqing Qi, Xiu Li, Bowen Zhou. <a href="https://doi.org/10.1609/aaai.v40i41.40797" target="_blank" rel="noopener">[<strong>Paper</strong>]</a></p>
+        <p><span class="paper__venue">[<strong>AAAI 2026</strong>]</span> <em>GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning</em>. Jian Zhao*, Runze Liu*, Kaiyan Zhang, <strong>Zhimu Zhou</strong>, Junqi Gao, Dong Li, Jiafei Lyu, Zhouyi Qian, Biqing Qi, Xiu Li, Bowen Zhou. <a href="https://doi.org/10.1609/aaai.v40i41.40797" target="_blank" rel="noopener">[<strong>Paper</strong>]</a></p>
       </article>
     </div>
+      <p class="document-meta">* Equal contribution (co-first authors).</p>
       <a class="archive-text-link" href="{{ '/publications/' | relative_url }}">View publication archive <span aria-hidden="true">↗</span></a>
     </section>
     <section class="archive-document" id="internships" data-code="I–002" data-title="Internships" data-type="RESEARCH EXPERIENCE" data-count="02 RECORDS" data-note="2025 — PRESENT / INDUSTRY" aria-labelledby="internships-title">

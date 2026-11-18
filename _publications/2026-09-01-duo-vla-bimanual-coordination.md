@@ -1,12 +1,12 @@
 ---
-title: "Duo: Dual-arm coordination for Bimanual Policies"
+title: "Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies"
 collection: publications
 category: under_review
 permalink: /publication/duo-vla-bimanual-coordination
 excerpt: 'Arm-wise state and action tokens with coupled generation in a shared Transformer, improving bimanual VLA and WAM policies.'
 date: 2026-09-01
 venue: 'Under Review'
-citation: 'Zhimu Zhou, Yuqi Yang, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao. (2026). &quot;Duo: Dual-arm coordination for Bimanual Policies.&quot; Under review.'
+citation: 'Zhimu Zhou*, Yuqi Yang*, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao. (2026). &quot;Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies.&quot; Under review. (*Equal contribution; co-first authors)'
 ---
 
 Duo assigns each arm separate state and action tokens, then jointly generates both arms' action chunks through cross-arm self-attention in one shared Transformer. The design applies to both vision-language-action (VLA) and world-action model (WAM) policies.
@@ -19,4 +19,4 @@ Ablations examine coupled generation, action grouping, and token granularity. Pe
 
 **Status:** Under review; research ongoing since September 2026.
 
-**Personal contribution:** Co-first author; model implementation, training, systematic evaluation, ablations on action grouping, cross-arm interaction and cross-model transfer, and paper writing.
+**Personal contribution:** Co-first author with Yuqi Yang; model implementation, training, systematic evaluation, ablations on action grouping, cross-arm interaction and cross-model transfer, and paper writing.

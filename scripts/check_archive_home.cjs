@@ -44,6 +44,10 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'publications');
     assert.equal(await page.locator('#publications .paper em').count(), 5);
     assert(!(await page.locator('#publications').innerText()).includes('Accepted'));
+    const duoTitle = 'Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies';
+    assert.equal(await page.locator('#publications .paper em').first().innerText(), duoTitle);
+    assert((await page.locator('#publications .paper').first().innerText()).includes('Zhimu Zhou*, Yuqi Yang*'));
+    assert((await page.locator('#publications').innerText()).includes('* Equal contribution'));
     await page.locator('.archive-reader-scroll').evaluate(el => { el.scrollTop = el.scrollHeight; });
     const lastPaper = await page.locator('#publications .paper').last().boundingBox();
     assert(lastPaper.y + lastPaper.height < 805, 'Last paper must be readable within the scroll area');
@@ -105,6 +109,27 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     }
     await staticPage.close();
     console.log('PASS: reduced motion, unavailable 3D asset and JavaScript-free reading');
+
+    const publicationPage = await browser.newPage({ javaScriptEnabled: false });
+    for (const path of ['publications/', 'cv/', 'cv-json/', 'publication/duo-vla-bimanual-coordination']) {
+      assert.equal((await publicationPage.goto(base + path)).status(), 200);
+      const content = await publicationPage.locator('#main').innerText();
+      assert(content.includes(duoTitle), `Duo title missing on ${path}`);
+      assert(!content.includes('Dual-arm coordination'), `Stale title on ${path}`);
+      assert(!content.includes('Accepted'), `Stale acceptance label on ${path}`);
+      assert(!content.includes('Published in Under Review'), `Incorrect publication status on ${path}`);
+      if (path === 'cv-json/') {
+        assert(content.includes('Co-first authors: Zhimu Zhou and Yuqi Yang.'));
+      } else {
+        assert(content.includes('Zhimu Zhou*, Yuqi Yang*'), `Missing co-first authors on ${path}`);
+      }
+      assert(await publicationPage.locator('em').filter({ hasText: duoTitle }).count() > 0);
+      if (path.startsWith('publication/')) {
+        assert.equal(await publicationPage.locator('[itemprop="datePublished"], meta[property="article:published_time"]').count(), 0);
+      }
+    }
+    await publicationPage.close();
+    console.log('PASS: consistent publication titles, co-first authors, italics and review status across all pages');
   } finally {
     await browser.close();
   }

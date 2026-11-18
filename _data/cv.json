@@ -56,11 +56,11 @@
   ],
   "publications": [
     {
-      "name": "Duo: Dual-arm coordination for Bimanual Policies",
+      "name": "Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies",
       "publisher": "Under Review",
       "releaseDate": "2026-09-01",
       "website": null,
-      "summary": "Arm-wise state and action tokens with coupled generation in a shared Transformer, improving bimanual VLA and WAM policies."
+      "summary": "Co-first authors: Zhimu Zhou and Yuqi Yang. Arm-wise state and action tokens with coupled generation in a shared Transformer, improving bimanual VLA and WAM policies."
     },
     {
       "name": "MSNav: Zero-Shot Vision-and-Language Navigation with Dynamic Memory and LLM Spatial Reasoning",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Probing Visual Planning in Image Editing Models",
-      "publisher": "NeurIPS 2026 (Accepted)",
+      "publisher": "NeurIPS 2026",
       "releaseDate": "2026-04-23",
       "website": "https://arxiv.org/abs/2604.22868",
       "summary": "EAR reframes visual planning as a single-step image transformation and introduces AMAZE, a procedurally generated benchmark of abstract planning puzzles."

@@ -19,13 +19,13 @@ Education
 
 Research Experience
 ======
-* 2026.09 - Present: Co-first Author - "Duo: Dual-arm coordination for Bimanual Policies" (Under Review)
+* 2026.09 - Present: Co-first Author (with Yuqi Yang) - "Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies" (Under Review)
   * Designed arm-wise state and action tokens with coupled generation through cross-arm self-attention in a shared Transformer, applicable to VLA and WAM policies.
   * Implemented and trained the model, conducted systematic evaluations and ablations, and contributed to paper writing.
   * Improved four base policies on RoboTwin 2.0: FLOWER-Duo achieves 62.70% overall success (+12.55 percentage points), and π0.5-Duo achieves 67.37% (+9.02 points). FLOWER-Duo leads the compared models in randomized generalization, precision, and memory on RoboDojo.
   * Evaluated FLOWER-Duo on real robots: 90.0% success on soft-parcel handling, 83.8% on rigid-parcel handling, and 40.0% on box packing, exceeding π0.5 on all three tasks.
 
-* 2025.10 - 2026.04: Project Leader and First Author - "Probing Visual Planning in Image Editing Models" (NeurIPS 2026, Accepted)
+* 2025.10 - 2026.04: Project Leader and First Author - "Probing Visual Planning in Image Editing Models" (NeurIPS 2026)
   * BIGAI
   * Built the Amaze benchmark to evaluate visual spatial reasoning and planning in image editing models.
   * Designed a fully automated, rule-based image-to-image evaluation pipeline.
