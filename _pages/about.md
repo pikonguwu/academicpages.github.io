@@ -37,7 +37,7 @@ author_profile: false
     <p class="archive-kicker">PERSONAL DATABASE <span>/</span> <span id="preview-type">RESEARCH OUTPUT</span></p>
     <p class="archive-file-no">FILE NO. <span id="preview-code">P–001</span><span class="archive-status">RESEARCH ARCHIVE</span></p>
     <h1 id="archive-preview-title">Publications</h1>
-    <div class="archive-preview-meta"><span id="preview-count">05 RECORDS</span><span id="preview-note">2026 / PAPERS &amp; PREPRINTS</span></div>
+    <div class="archive-preview-meta"><span id="preview-count">06 RECORDS</span><span id="preview-note">2026 / PAPERS &amp; PREPRINTS</span></div>
     <button class="archive-access" type="button">ACCESS FILE <span aria-hidden="true">↗</span></button>
   </div>
 
@@ -77,11 +77,15 @@ author_profile: false
 <div class="archive-reader" id="archive-reader">
   <button class="archive-back" type="button"><span aria-hidden="true">←</span> ARCHIVE OVERVIEW <kbd>ESC</kbd></button>
   <div class="archive-reader-scroll">
-    <section class="archive-document" id="publications" data-code="P–001" data-title="Publications" data-type="RESEARCH OUTPUT" data-count="05 RECORDS" data-note="2026 / PAPERS &amp; PREPRINTS" aria-labelledby="publications-title">
+    <section class="archive-document" id="publications" data-code="P–001" data-title="Publications" data-type="RESEARCH OUTPUT" data-count="06 RECORDS" data-note="2026 / PAPERS &amp; PREPRINTS" aria-labelledby="publications-title">
       <header class="document-heading"><p class="archive-kicker">FILE P–001 <span>/</span> RESEARCH OUTPUT</p><h2 id="publications-title" tabindex="-1">Publications</h2><p class="document-meta">PAPERS &amp; PREPRINTS <span>2026</span></p></header>
       <div class="paper-list">
       <article class="paper" data-reveal>
         <p><span class="paper__venue">[<strong>Under Review</strong>]</span> <em>Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies</em>. <strong>Zhimu Zhou*</strong>, Yuqi Yang*, Yixin Lin, Junsen Zhang, Jian Zhao, Jiayu Zhong, Jiaxun Sun, Bingxin Wang, Binhua Zuo, Bo Zhao.</p>
+      </article>
+
+      <article class="paper" data-reveal>
+        <p><span class="paper__venue">[<strong>Under Review</strong>]</span> <em>BiWAM: A Lightweight Bimanual World-Action Model with Causal Interaction Modeling</em>. Hongming Fu, Yuqi Yang, <strong>Zhimu Zhou</strong>, Junsen Zhang, Yixin Lin, Binhua Zuo, Bo Zhao.</p>
       </article>
 
       <article class="paper" data-reveal>
@@ -143,7 +147,7 @@ author_profile: false
 
 <nav class="archive-index" id="archive-index" aria-label="Archive files">
   <div class="archive-index-heading"><p>ARCHIVE / SELECT</p><div class="archive-pagination"><span id="archive-position">01</span><span>/ 03</span><button type="button" data-step="-1" aria-label="Previous file">←</button><button type="button" data-step="1" aria-label="Next file">→</button></div></div>
-  <a href="#publications" data-file="publications"><span class="file-tab-code">01 / P–001</span><span class="file-tab-title">Publications</span><span class="file-tab-tail">05 RECORDS <span aria-hidden="true">↗</span></span></a>
+  <a href="#publications" data-file="publications"><span class="file-tab-code">01 / P–001</span><span class="file-tab-title">Publications</span><span class="file-tab-tail">06 RECORDS <span aria-hidden="true">↗</span></span></a>
   <a href="#internships" data-file="internships"><span class="file-tab-code">02 / I–002</span><span class="file-tab-title">Internships</span><span class="file-tab-tail">02 RECORDS <span aria-hidden="true">↗</span></span></a>
   <a href="#honors" data-file="honors"><span class="file-tab-code">03 / H–003</span><span class="file-tab-title">Honors</span><span class="file-tab-tail">04 RECORDS <span aria-hidden="true">↗</span></span></a>
 </nav>

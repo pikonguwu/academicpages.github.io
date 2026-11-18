@@ -42,7 +42,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
 
     await page.locator('.archive-access').click();
     assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'publications');
-    assert.equal(await page.locator('#publications .paper em').count(), 5);
+    assert.equal(await page.locator('#publications .paper em').count(), 6);
     assert(!(await page.locator('#publications').innerText()).includes('Accepted'));
     const duoTitle = 'Duo: Towards Spatiotemporal Action Coordination in Bimanual Policies';
     assert.equal(await page.locator('#publications .paper em').first().innerText(), duoTitle);
