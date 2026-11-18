@@ -167,23 +167,25 @@ export async function createArchiveScene(container, files) {
     mobile = width <= 760;
     camera.left = -6 * width / height;
     camera.right = -camera.left;
-    const compact = width <= 1100;
     const overview = container.closest('.archive-app').querySelector('.archive-overview');
     const mobileAnchor = reading ? 245 : overview.offsetTop + 130;
     container.closest('.archive-app').style.setProperty('--archive-model-y', `${mobileAnchor}px`);
-    camera.setViewOffset(width, height, mobile ? -width * .05 : width * (reading ? .09 : compact ? .04 : .02), mobile ? height / 2 - mobileAnchor : height * .02, width, height);
+    camera.setViewOffset(width, height, mobile ? -width * .05 : width * .09, mobile ? height / 2 - mobileAnchor : height * .02, width, height);
     camera.updateProjectionMatrix();
     renderer.setSize(width, height);
-    targetScale = Math.min(1.4, width * (mobile ? .65 : reading ? .22 : compact ? .29 : .32) * 12 / (5 * height));
+    targetScale = Math.min(1.4, width * (mobile ? .65 : .17) * 12 / (5 * height));
     controls.enabled = !(mobile && reading);
     schedule();
   }
 
   function reset() {
     cameraTween = true;
-    cameraTarget.set(0, reading ? .7 : 0, 0);
-    cameraPosition.setFromSpherical(new THREE.Spherical(20, reading ? 1.4 : 1.27, reading ? .14 : .37)).add(cameraTarget);
-    targetZoom = reading ? 1.04 : 1;
+    cameraTarget.set(0, reading ? .7 : mobile ? 0 : -.3, 0);
+    // On desktop the cassette is framed between the profile and the open file.
+    const polar = mobile ? (reading ? 1.4 : 1.27) : 1.02;
+    const azimuth = mobile ? (reading ? .14 : .37) : .70;
+    cameraPosition.setFromSpherical(new THREE.Spherical(20, polar, azimuth)).add(cameraTarget);
+    targetZoom = mobile && reading ? 1.04 : 1;
     schedule();
   }
 
