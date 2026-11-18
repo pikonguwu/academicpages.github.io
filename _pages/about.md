@@ -63,7 +63,6 @@ author_profile: false
         <span class="info-card__year">2022.09 — 2026.06</span>
         <h3>Beijing University of Posts and Telecommunications</h3>
         <p>B.Eng. in Internet of Things Engineering</p>
-        <small>CET-6: 627</small>
       </article>
     </details>
 </aside>
