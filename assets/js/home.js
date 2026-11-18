@@ -98,6 +98,16 @@
   app.querySelectorAll('[data-step]').forEach(button => button.addEventListener('click', () => select(selected + Number(button.dataset.step))));
   access.addEventListener('click', open);
   app.querySelector('.archive-back').addEventListener('click', close);
+  const background = app.querySelector('.resident-background');
+  background?.addEventListener('toggle', () => {
+    const resident = background.closest('.archive-resident');
+    if (background.open && getComputedStyle(resident).overflowY === 'auto') {
+      resident.scrollTo({
+        top: background.offsetTop,
+        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    }
+  });
   app.querySelectorAll('.archive-tools a[href="#profile"], .archive-tools a[href="#research"]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
     app.querySelector(`${link.getAttribute('href')} h2`).focus();

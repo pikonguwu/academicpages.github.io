@@ -40,11 +40,21 @@ author_profile: false
     <section class="resident-section" id="profile" data-code="Z–004" data-title="Profile" data-type="PERSONAL RECORD" data-note="SHANGHAI JIAO TONG UNIVERSITY" aria-labelledby="profile-title">
       <header class="document-heading"><p class="archive-kicker">FILE Z–004 <span>/</span> PERSONAL RECORD</p><h2 id="profile-title" tabindex="-1">Profile</h2><p class="document-meta">PH.D. STUDENT <span>SHANGHAI / CHINA</span></p></header>
       <div class="profile-intro"><img src="{{ '/images/profile-london.jpg' | relative_url }}" alt="Zhimu Zhou in London" width="1200" height="1600"><p>I am a Ph.D. student at the <a href="https://soai.sjtu.edu.cn/" target="_blank" rel="noopener">School of Artificial Intelligence</a> at Shanghai Jiao Tong University, advised by <a href="https://www.bozhao.me/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.</p></div>
-      <section class="profile-education" aria-labelledby="education">
-        <h3 id="education">Education</h3>
-        <p><strong>Shanghai Jiao Tong University</strong><br>Ph.D. in Artificial Intelligence · School of Artificial Intelligence<br>2026.09 — 2031.06 (expected) · Advisor: Prof. Bo Zhao</p>
-        <p><strong>Beijing University of Posts and Telecommunications</strong><br>B.Eng. in Internet of Things Engineering<br>2022.09 — 2026.06 · CET-6: 627</p>
-      </section>
+      <details class="resident-background" id="education">
+        <summary>Education <span aria-hidden="true">+</span></summary>
+      <article class="info-card">
+        <span class="info-card__year">2026.09 — 2031.06 (expected)</span>
+        <h3>Shanghai Jiao Tong University</h3>
+        <p>Ph.D. in Artificial Intelligence<br>School of Artificial Intelligence</p>
+        <small>Advisor: Prof. Bo Zhao</small>
+      </article>
+      <article class="info-card">
+        <span class="info-card__year">2022.09 — 2026.06</span>
+        <h3>Beijing University of Posts and Telecommunications</h3>
+        <p>B.Eng. in Internet of Things Engineering</p>
+        <small>CET-6: 627</small>
+      </article>
+      </details>
     </section>
     <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="EXPLORING EMBODIED AI / AI &amp; ROBOTICS" aria-labelledby="research-title">
       <header class="document-heading"><p class="archive-kicker">FILE R–003 <span>/</span> RESEARCH DIRECTIONS</p><h2 id="research-title" tabindex="-1">Research Interests</h2><p class="document-meta">EXPLORING EMBODIED AI <span>AI &amp; ROBOTICS</span></p></header>

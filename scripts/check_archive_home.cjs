@@ -64,7 +64,10 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'honors');
     assert.equal(await page.locator('#honors li').count(), 4);
-    assert.equal(await page.locator('#profile .profile-education p').count(), 2);
+    const education = page.locator('#profile #education');
+    await education.locator('summary').click();
+    assert.equal(await education.locator('.info-card:visible').count(), 2);
+    await education.locator('summary').click();
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'publications');
     await page.goBack();
