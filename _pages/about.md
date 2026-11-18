@@ -13,7 +13,7 @@ author_profile: false
 <header class="archive-header">
   <a class="archive-brand" href="{{ '/' | relative_url }}" aria-label="Zhimu Zhou, archive home">
     <strong>ZHIMU ZHOU</strong>
-    <span>PHYSICAL INTELLIGENCE</span>
+    <span>EXPLORING EMBODIED AI</span>
     <span class="archive-brand__sub">RESEARCH <b>ARCHIVE</b></span>
   </a>
   <nav class="archive-tools" aria-label="Contact and links">
@@ -41,8 +41,8 @@ author_profile: false
       <header class="document-heading"><p class="archive-kicker">FILE Z–004 <span>/</span> PERSONAL RECORD</p><h2 id="profile-title" tabindex="-1">Profile</h2><p class="document-meta">PH.D. STUDENT <span>SHANGHAI / CHINA</span></p></header>
       <div class="profile-intro"><img src="{{ '/images/profile-london.jpg' | relative_url }}" alt="Zhimu Zhou in London" width="1200" height="1600"><p>I am a Ph.D. student at the <a href="https://soai.sjtu.edu.cn/" target="_blank" rel="noopener">School of Artificial Intelligence</a> at Shanghai Jiao Tong University, advised by <a href="https://www.bozhao.me/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.</p></div>
     </section>
-    <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="PHYSICAL INTELLIGENCE / AI &amp; ROBOTICS" aria-labelledby="research-title">
-      <header class="document-heading"><p class="archive-kicker">FILE R–003 <span>/</span> RESEARCH DIRECTIONS</p><h2 id="research-title" tabindex="-1">Research Interests</h2><p class="document-meta">PHYSICAL INTELLIGENCE <span>AI &amp; ROBOTICS</span></p></header>
+    <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="EXPLORING EMBODIED AI / AI &amp; ROBOTICS" aria-labelledby="research-title">
+      <header class="document-heading"><p class="archive-kicker">FILE R–003 <span>/</span> RESEARCH DIRECTIONS</p><h2 id="research-title" tabindex="-1">Research Interests</h2><p class="document-meta">EXPLORING EMBODIED AI <span>AI &amp; ROBOTICS</span></p></header>
       <p class="research-statement">Starting from physical intelligence, I explore interesting questions in AI and robotics.</p>
       <div class="research-list">
         <article><span>01</span><h3>Vision-Language-Action</h3></article>
