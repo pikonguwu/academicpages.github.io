@@ -7,6 +7,17 @@
   const reader = app.querySelector('.archive-reader');
   const access = app.querySelector('.archive-access');
   const theme = app.querySelector('.archive-theme');
+  const music = app.querySelector('.archive-music');
+  music?.addEventListener('toggle', () => {
+    const player = music.querySelector('iframe');
+    if (music.open && !player.hasAttribute('src')) {
+      player.src = player.dataset.src;
+      player.hidden = false;
+    }
+  });
+  document.addEventListener('click', event => {
+    if (music?.open && !music.contains(event.target)) music.open = false;
+  });
   let selected = 0;
   let reading = false;
   let scene;
@@ -125,6 +136,11 @@
       return;
     }
     if (event.altKey || event.ctrlKey || event.metaKey || event.target.matches('input, textarea, select, [contenteditable]')) return;
+    if (event.key === 'Escape' && music?.open) {
+      music.open = false;
+      music.querySelector('summary').focus();
+      return;
+    }
     if (event.key === 'Escape' && reading) { event.preventDefault(); close(); }
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
       event.preventDefault(); select(selected + (event.key === 'ArrowRight' ? 1 : -1));

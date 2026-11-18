@@ -49,8 +49,14 @@ html[data-theme="dark"] .archive-home {
 .archive-brand > span { font-size: 11px; font-weight: 600; letter-spacing: .075em; margin-top: 6px; }
 .archive-brand .archive-brand__sub { font-size: 19px; font-weight: 350; letter-spacing: .09em; margin-top: 4px; }
 .archive-brand__sub b { font-weight: 700; letter-spacing: .025em; }
-.archive-tools { display: flex; align-items: center; gap: 28px; padding-top: 5px; font-size: 11px; letter-spacing: .06em; }
+.archive-tools { position: relative; align-self: flex-start; display: flex; align-items: center; gap: 28px; padding-top: 5px; font-size: 11px; letter-spacing: .06em; }
 .archive-tools a { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; }
+.archive-music summary { display: grid; place-items: center; width: 30px; min-height: 32px; font-size: 20px; cursor: pointer; list-style: none; }
+.archive-music summary::-webkit-details-marker { display: none; }
+.archive-music[open] summary { color: var(--archive-accent); }
+.archive-music-panel { position: absolute; top: 100%; right: 0; width: min(340px, calc(100vw - 44px)); padding: 8px; background: var(--archive-bg); border: 1px solid var(--archive-line); }
+.archive-music-panel iframe { display: block; width: 100%; height: min(450px, 56vh); border: 0; }
+.archive-tools .archive-music-panel a { display: inline-flex; min-height: 30px; }
 .archive-tools .archive-theme { font-size: 24px; width: 44px; height: 44px; }
 .archive-overview { position: relative; min-height: 400px; pointer-events: none; }
 .archive-owner { position: absolute; left: 0; top: 12px; display: flex; gap: 13px; align-items: flex-start; }
