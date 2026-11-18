@@ -20,7 +20,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     await page.locator('.archive-boot').waitFor({ state: 'hidden' });
     await page.locator('.archive-scene.is-ready').waitFor({ timeout: 45000 });
     await page.waitForTimeout(1800);
-    assert.equal(await page.locator('[data-file]').count(), 2);
+    assert.equal(await page.locator('[data-file]').count(), 3);
     assert.equal(await page.locator('.archive-reader').isVisible(), false);
 
     for (const id of ['profile', 'research']) {
@@ -61,6 +61,10 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     await page.locator('.archive-access').click();
     assert.equal(await page.locator('#internships .timeline__item').count(), 2);
     assert.equal(await page.locator('#internships .timeline__content > p:not(.timeline__company)').count(), 0);
+    await page.keyboard.press('ArrowRight');
+    assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'honors');
+    assert.equal(await page.locator('#honors li').count(), 4);
+    assert.equal(await page.locator('#profile .profile-education p').count(), 2);
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'publications');
     await page.goBack();
@@ -105,7 +109,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
 
     const staticPage = await browser.newPage({ javaScriptEnabled: false });
     await staticPage.goto(base);
-    for (const file of ['publications', 'internships', 'research', 'profile']) {
+    for (const file of ['publications', 'internships', 'education', 'honors', 'research', 'profile']) {
       assert.equal(await staticPage.locator(`#${file}`).isVisible(), true);
     }
     await staticPage.close();
@@ -118,34 +122,11 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     }
     console.log('PASS: obsolete pages are no longer published');
 
-    for (const viewport of [{ width: 1440, height: 900 }, { width: 1024, height: 768 }, { width: 390, height: 844 }]) {
-      await backgroundPage.setViewportSize(viewport);
-      await backgroundPage.goto(base);
-      const details = backgroundPage.locator('.resident-background');
-      const summary = details.locator('summary');
-      await summary.locator('span').click();
-      await backgroundPage.waitForFunction(() => {
-        const card = document.querySelector('.resident-background .info-card');
-        const rect = card.getBoundingClientRect();
-        return card.contains(document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2));
-      });
-      assert.equal(await details.evaluate(el => el.open), true);
-      if (viewport.width > 760) assert.equal(await backgroundPage.evaluate(() => scrollY), 0);
-      const lastHonor = details.locator('.honor-list li').last();
-      await lastHonor.scrollIntoViewIfNeeded();
-      assert(await lastHonor.evaluate(el => {
-        const rect = el.getBoundingClientRect();
-        return el.contains(document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2));
-      }));
-      await summary.click();
-      await summary.press('Enter');
-      assert.equal(await details.evaluate(el => el.open), true);
-      assert.equal(await backgroundPage.locator('.archive-reader').isVisible(), false);
-      await summary.press('Space');
-      assert.equal(await details.evaluate(el => el.open), false);
-    }
+    await backgroundPage.goto(base + '#honors');
+    assert.equal(await backgroundPage.locator('.archive-document:visible').getAttribute('id'), 'honors');
+    assert.equal(await backgroundPage.locator('[data-file][aria-current]').getAttribute('data-file'), 'honors');
     await backgroundPage.close();
-    console.log('PASS: education and honors visible after expansion, scrollable through the final honor, with native keyboard controls');
+    console.log('PASS: direct link to honors');
   } finally {
     await browser.close();
   }

@@ -37,9 +37,14 @@ author_profile: false
 </section>
 
 <aside class="archive-resident" aria-label="Profile and research">
-    <section class="resident-section" id="profile" data-code="Z–004" data-title="Profile" data-type="PERSONAL RECORD" data-count="EDUCATION &amp; HONORS" data-note="SHANGHAI JIAO TONG UNIVERSITY" aria-labelledby="profile-title">
+    <section class="resident-section" id="profile" data-code="Z–004" data-title="Profile" data-type="PERSONAL RECORD" data-note="SHANGHAI JIAO TONG UNIVERSITY" aria-labelledby="profile-title">
       <header class="document-heading"><p class="archive-kicker">FILE Z–004 <span>/</span> PERSONAL RECORD</p><h2 id="profile-title" tabindex="-1">Profile</h2><p class="document-meta">PH.D. STUDENT <span>SHANGHAI / CHINA</span></p></header>
       <div class="profile-intro"><img src="{{ '/images/profile-london.jpg' | relative_url }}" alt="Zhimu Zhou in London" width="1200" height="1600"><p>I am a Ph.D. student at the <a href="https://soai.sjtu.edu.cn/" target="_blank" rel="noopener">School of Artificial Intelligence</a> at Shanghai Jiao Tong University, advised by <a href="https://www.bozhao.me/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.</p></div>
+      <section class="profile-education" aria-labelledby="education">
+        <h3 id="education">Education</h3>
+        <p><strong>Shanghai Jiao Tong University</strong><br>Ph.D. in Artificial Intelligence · School of Artificial Intelligence<br>2026.09 — 2031.06 (expected) · Advisor: Prof. Bo Zhao</p>
+        <p><strong>Beijing University of Posts and Telecommunications</strong><br>B.Eng. in Internet of Things Engineering<br>2022.09 — 2026.06 · CET-6: 627</p>
+      </section>
     </section>
     <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="EXPLORING EMBODIED AI / AI &amp; ROBOTICS" aria-labelledby="research-title">
       <header class="document-heading"><p class="archive-kicker">FILE R–003 <span>/</span> RESEARCH DIRECTIONS</p><h2 id="research-title" tabindex="-1">Research Interests</h2><p class="document-meta">EXPLORING EMBODIED AI <span>AI &amp; ROBOTICS</span></p></header>
@@ -51,33 +56,6 @@ author_profile: false
         <article><span>04</span><h3>Multimodal Models</h3></article>
       </div>
     </section>
-<details class="resident-background"><summary>Education &amp; honors <span aria-hidden="true">+</span></summary>      <div class="profile-grid">
-    <div data-reveal>
-      <p class="profile-grid__label">Education</p>
-      <article class="info-card">
-        <span class="info-card__year">2026.09 — 2031.06 (expected)</span>
-        <h3>Shanghai Jiao Tong University</h3>
-        <p>Ph.D. in Artificial Intelligence<br>School of Artificial Intelligence</p>
-        <small>Advisor: Prof. Bo Zhao</small>
-      </article>
-      <article class="info-card">
-        <span class="info-card__year">2022.09 — 2026.06</span>
-        <h3>Beijing University of Posts and Telecommunications</h3>
-        <p>B.Eng. in Internet of Things Engineering</p>
-        <small>CET-6: 627</small>
-      </article>
-    </div>
-    <div data-reveal>
-      <p class="profile-grid__label">Selected Honors</p>
-      <ul class="honor-list">
-        <li><strong>National Encouragement Scholarship</strong><span>Only recipient in major, BUPT · 2025</span></li>
-        <li><strong>National First Prize · 1st in Track</strong><span>IC Innovation Contest, MIIT · 2024</span></li>
-        <li><strong>Xiaomi Social Scholarship</strong><span>Only recipient in major, BUPT · 2024</span></li>
-        <li><strong>Second-Class Scholarship</strong><span>Rank: 2/182, BUPT · 2023 &amp; 2024</span></li>
-      </ul>
-    </div>
-  </div>
-</details>
 </aside>
 
 <div class="archive-reader" id="archive-reader">
@@ -129,6 +107,15 @@ author_profile: false
     </article>
   </div>
     </section>
+    <section class="archive-document" id="honors" data-code="H–003" data-title="Honors" data-type="SELECTED AWARDS" data-count="04 RECORDS" data-note="2023 — 2025" aria-labelledby="honors-title">
+      <header class="document-heading"><p class="archive-kicker">FILE H–003 <span>/</span> SELECTED AWARDS</p><h2 id="honors-title" tabindex="-1">Honors</h2></header>
+      <ul class="honor-list">
+        <li><strong>National Encouragement Scholarship</strong><span>Only recipient in major, BUPT · 2025</span></li>
+        <li><strong>National First Prize · 1st in Track</strong><span>IC Innovation Contest, MIIT · 2024</span></li>
+        <li><strong>Xiaomi Social Scholarship</strong><span>Only recipient in major, BUPT · 2024</span></li>
+        <li><strong>Second-Class Scholarship</strong><span>Rank: 2/182, BUPT · 2023 &amp; 2024</span></li>
+      </ul>
+    </section>
 
   </div>
 </div>
@@ -139,10 +126,9 @@ author_profile: false
 </div>
 
 <nav class="archive-index" id="archive-index" aria-label="Archive files">
-  <div class="archive-index-heading"><p>ARCHIVE / SELECT</p><div class="archive-pagination"><span id="archive-position">01</span><span>/ 02</span><button type="button" data-step="-1" aria-label="Previous file">←</button><button type="button" data-step="1" aria-label="Next file">→</button></div></div>
+  <div class="archive-index-heading"><p>ARCHIVE / SELECT</p><div class="archive-pagination"><span id="archive-position">01</span><span>/ 03</span><button type="button" data-step="-1" aria-label="Previous file">←</button><button type="button" data-step="1" aria-label="Next file">→</button></div></div>
   <a href="#publications" data-file="publications"><span class="file-tab-code">01 / P–001</span><span class="file-tab-title">Publications</span><span class="file-tab-tail">05 RECORDS <span aria-hidden="true">↗</span></span></a>
   <a href="#internships" data-file="internships"><span class="file-tab-code">02 / I–002</span><span class="file-tab-title">Internships</span><span class="file-tab-tail">02 RECORDS <span aria-hidden="true">↗</span></span></a>
-
-
+  <a href="#honors" data-file="honors"><span class="file-tab-code">03 / H–003</span><span class="file-tab-title">Honors</span><span class="file-tab-tail">04 RECORDS <span aria-hidden="true">↗</span></span></a>
 </nav>
 <footer class="archive-footer"><span><i aria-hidden="true"></i> PERSONAL RESEARCH ARCHIVE</span><span>INSPIRED BY <a href="https://github.com/LBEILC/RhineLabUI" target="_blank" rel="noopener">RHINELABUI ↗</a></span></footer>
