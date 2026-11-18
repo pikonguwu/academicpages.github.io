@@ -21,8 +21,6 @@ author_profile: false
     <a href="#research">RESEARCH</a>
     <a href="mailto:2022zhimu.zhou@bupt.edu.cn">EMAIL <span aria-hidden="true">↗</span></a>
     <a href="https://github.com/pikonguwu" target="_blank" rel="noopener">GITHUB <span aria-hidden="true">↗</span></a>
-    <audio id="archive-audio" preload="none" loop src="{{ '/assets/audio/orbit.m4a' | relative_url }}"></audio>
-    <button class="archive-music" type="button" hidden aria-controls="archive-audio" aria-label="Play background music">▶ MUSIC</button>
     <button class="archive-theme" type="button" aria-label="Switch to dark theme" title="Switch theme">◐</button>
   </nav>
 </header>
