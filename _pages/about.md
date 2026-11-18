@@ -40,8 +40,19 @@ author_profile: false
     <section class="resident-section" id="profile" data-code="Z–004" data-title="Profile" data-type="PERSONAL RECORD" data-note="SHANGHAI JIAO TONG UNIVERSITY" aria-labelledby="profile-title">
       <header class="document-heading"><p class="archive-kicker">FILE Z–004 <span>/</span> PERSONAL RECORD</p><h2 id="profile-title" tabindex="-1">Profile</h2><p class="document-meta">PH.D. STUDENT <span>SHANGHAI / CHINA</span></p></header>
       <div class="profile-intro"><img src="{{ '/images/profile-london.jpg' | relative_url }}" alt="Zhimu Zhou in London" width="1200" height="1600"><p>I am a Ph.D. student at the <a href="https://soai.sjtu.edu.cn/" target="_blank" rel="noopener">School of Artificial Intelligence</a> at Shanghai Jiao Tong University, advised by <a href="https://www.bozhao.me/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.</p></div>
-      <details class="resident-background" id="education">
-        <summary>Education <span aria-hidden="true">+</span></summary>
+    </section>
+    <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="EXPLORING EMBODIED AI / AI &amp; ROBOTICS" aria-labelledby="research-title">
+      <header class="document-heading"><p class="archive-kicker">FILE R–003 <span>/</span> RESEARCH DIRECTIONS</p><h2 id="research-title" tabindex="-1">Research Interests</h2><p class="document-meta">EXPLORING EMBODIED AI <span>AI &amp; ROBOTICS</span></p></header>
+      <p class="research-statement">Starting from physical intelligence, I explore interesting questions in AI and robotics.</p>
+      <div class="research-list">
+        <article><span>01</span><h3>Vision-Language-Action</h3></article>
+        <article><span>02</span><h3>Embodied AI</h3></article>
+        <article><span>03</span><h3>Human-Robot Interaction</h3></article>
+        <article><span>04</span><h3>Multimodal Models</h3></article>
+      </div>
+    </section>
+    <details class="resident-background" id="education">
+        <summary class="document-heading"><h2>Education <span aria-hidden="true">+</span></h2></summary>
       <article class="info-card">
         <span class="info-card__year">2026.09 — 2031.06 (expected)</span>
         <h3>Shanghai Jiao Tong University</h3>
@@ -54,18 +65,7 @@ author_profile: false
         <p>B.Eng. in Internet of Things Engineering</p>
         <small>CET-6: 627</small>
       </article>
-      </details>
-    </section>
-    <section class="resident-section" id="research" data-code="R–003" data-title="Research" data-type="RESEARCH DIRECTIONS" data-count="04 DIRECTIONS" data-note="EXPLORING EMBODIED AI / AI &amp; ROBOTICS" aria-labelledby="research-title">
-      <header class="document-heading"><p class="archive-kicker">FILE R–003 <span>/</span> RESEARCH DIRECTIONS</p><h2 id="research-title" tabindex="-1">Research Interests</h2><p class="document-meta">EXPLORING EMBODIED AI <span>AI &amp; ROBOTICS</span></p></header>
-      <p class="research-statement">Starting from physical intelligence, I explore interesting questions in AI and robotics.</p>
-      <div class="research-list">
-        <article><span>01</span><h3>Vision-Language-Action</h3></article>
-        <article><span>02</span><h3>Embodied AI</h3></article>
-        <article><span>03</span><h3>Human-Robot Interaction</h3></article>
-        <article><span>04</span><h3>Multimodal Models</h3></article>
-      </div>
-    </section>
+    </details>
 </aside>
 
 <div class="archive-reader" id="archive-reader">

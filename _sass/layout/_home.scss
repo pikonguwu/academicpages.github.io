@@ -209,6 +209,7 @@ html[data-theme="dark"] .archive-home {
 .archive-resident .research-list article > span { font-size: 8px; }
 .resident-background { margin-top: 23px; font-size: 11px; }
 .resident-background summary { cursor: pointer; border-block: 1px solid var(--archive-line); padding-block: 14px; display: flex; justify-content: space-between; }
+.archive-resident .resident-background h2 { flex: 1; align-items: center; margin: 0; }
 .resident-background summary span { font-size: 16px; }
 .resident-background[open] summary span { transform: rotate(45deg); }
 .archive-preview { width: 28%; margin-left: 72%; }

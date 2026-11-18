@@ -64,7 +64,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('.archive-document:visible').getAttribute('id'), 'honors');
     assert.equal(await page.locator('#honors li').count(), 4);
-    const education = page.locator('#profile #education');
+    const education = page.locator('#research + #education');
     await education.locator('summary').click();
     assert.equal(await education.locator('.info-card:visible').count(), 2);
     await education.locator('summary').click();
@@ -81,6 +81,8 @@ const base = process.argv[2] || 'http://127.0.0.1:4000/academicpages.github.io/'
       await page.locator('.archive-access').click();
       await page.waitForTimeout(600);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `Overflow at ${width}px`);
+      const titleSize = heading => getComputedStyle(heading).fontSize;
+      assert.equal(await education.locator('h2').evaluate(titleSize), await page.locator('#research-title').evaluate(titleSize));
       const lines = await page.locator('#research h3').evaluateAll(headings => headings.map(heading => {
         const range = document.createRange();
         range.selectNodeContents(heading);
